@@ -1,0 +1,43 @@
+<%- include('includes/header.ejs') %>
+
+<h1><%= title %></h1>
+<h2>Logged in as => <span style="color:red;"><%= user.userName %></span></h2>
+
+<h1><%= userApi.username %></h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"><%=userApi.id %></th>
+            <td><%=userApi.name %></td>
+            <td><%=userApi.username %></td>
+            <td><%=userApi.email %></td>
+            <td><%=userApi.address.city %></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<br>
+<br>
+<br>
+<a href="/users">Go Back</a>
+
+
+
+
+
+
+
+
+
+
+<%- include('includes/footer.ejs') %>

@@ -1,0 +1,12 @@
+<%- include('includes/header.ejs') %>
+
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<form action="/login" method="POST">
+    User name: <br>
+    <input type="text" name="username"><br><br>
+    Password:<br>
+    <input type="password" name="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+<%- include('includes/footer.ejs') %>
