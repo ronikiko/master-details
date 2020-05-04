@@ -1,12 +1,21 @@
 <%- include('includes/header.ejs') %>
 
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
-<form action="/login" method="POST">
-    User name: <br>
-    <input type="text" name="username"><br><br>
-    Password:<br>
-    <input type="password" name="password"><br><br>
-    <input type="submit" value="Login">
-</form>
+<div class="form-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTyIglLx9z2v01REFXxZulo5uYwH_vY9TiK8upqIGVJZavwgQ0S&usqp=CAU" alt="">
+    <h1><%= title %></h1>
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">User name:</label>
+            <input class="form-control" type="text" name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Password</label>
+            <input class="form-control" type="password" name="password">
+        </div>
+        <input type="submit" value="Login" class="btn btn-success btn-block">
+    </form>
+   
+</div>
+
+
 <%- include('includes/footer.ejs') %>

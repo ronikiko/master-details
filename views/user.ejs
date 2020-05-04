@@ -1,9 +1,8 @@
 <%- include('includes/header.ejs') %>
 
-<h1><%= title %></h1>
-<h2>Logged in as => <span style="color:red;"><%= user.userName %></span></h2>
-
-<h1><%= userApi.username %></h1>
+<div class="jumbotron">
+    <h1><%= title %></h1>
+</div>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -28,8 +27,8 @@
 
 <br>
 <br>
-<br>
-<a href="/users">Go Back</a>
+
+<a class="btn btn-info" href="/users">Go Back</a>
 
 
 
